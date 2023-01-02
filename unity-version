@@ -1,0 +1,3 @@
+unity-version () {
+        cat ProjectSettings/ProjectVersion.txt | grep "m_EditorVersion:" | awk -F" " '{print $2 }'
+}
